@@ -70,7 +70,7 @@ Feature: DemoQA - Widgets
     Then "Content" should contain "Various versions have evolved over the years"
     When I click "What tab"
     Then "Content" should contain "unknown printer took a galley"
-  @run
+  @exclude
   Scenario: Tool tips
     When I click "Tool Tips option"
     And  I hover over "Hover me to see button"
@@ -81,7 +81,7 @@ Feature: DemoQA - Widgets
     Then "Contrary Tool tip" should contain "You hovered over the Contrary"
     When I hover over "Section 1.10.32"
     Then "Section Tool tip" should contain "You hovered over the 1.10.32"
-  @exclude
+  @run
   Scenario: Menu
     When I click "Menu option"
     And  I hover over "Main Item 1"

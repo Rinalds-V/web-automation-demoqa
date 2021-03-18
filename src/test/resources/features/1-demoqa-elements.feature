@@ -1,11 +1,10 @@
-
 Feature: DemoQA - Elements page
   Background:
     Given I am on the "Home" page
     And   I click "Elements"
     Then  I am on the "Elements" page
 
-  @run
+  @exclude
   Scenario: Text Box
     When I click "Text Box option"
     And  I set "Full Name field" to "Donald Biden"
@@ -16,7 +15,7 @@ Feature: DemoQA - Elements page
     Then I see "Text Box results" with the following data:
       | Name         | Email                  | Current Address                                     | Permanent Address                    |
       | Donald Biden | example@testdevlab.com | Liljerum Grenadjärtorpet 24, Undrom, 880 10, Sweden | Djursbo 70, Landeryd, 310 82, Sweden |
-
+  @exclude
   Scenario: Check Box
     When I click "Check Box option"
     And  I click "Expand button"
@@ -30,7 +29,7 @@ Feature: DemoQA - Elements page
       | angular    |
       | classified |
       | excelFile  |
-
+  @exclude
   Scenario: Radio button
     When I click "Radio Button option"
     And  I click "Yes button"
@@ -38,7 +37,7 @@ Feature: DemoQA - Elements page
     When I click "Impressive button"
     Then "Selected result" should contain "Impressive"
     And  "No button" should be "disabled"
-
+  @exclude
   Scenario: Web Tables
     When I click "Web Tables option"
     And  I click "Add button"
@@ -53,7 +52,7 @@ Feature: DemoQA - Elements page
     Then I see "Table row" with the following data:
       | First name | Last name | Age | Email                  | Salary | Department |
       | Joe        | Trump     | 53  | example@testdevlab.com | 10000  | Security   |
-
+  @exclude
   Scenario: Buttons
     When I click "Buttons option"
     And  I double click "Double click me button"

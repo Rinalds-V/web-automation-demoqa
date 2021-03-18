@@ -7,8 +7,8 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("/tool-tips")
 public class ToolTipsPage extends WidgetsPage {
   // Locators ----------------------------------------------------------------------------------------------------------
-  public static By TOOL_TIPS_TITLE;
-  public static By HOVER_ME_TO_SEE_BUTTON;
+  public static By TOOL_TIPS_TITLE = text("Tool Tips");
+  public static By HOVER_ME_TO_SEE_BUTTON = css("button[id='toolTipButton']");
   public static By HOVER_ME_TO_SEE_FIELD;
   public static By CONTRARY;
   // Might be necessary to use a specific xpath selector 

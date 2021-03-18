@@ -4,7 +4,7 @@ Feature: DemoQA - Widgets
     Given I am on the "Home" page
     And   I click "Widgets"
     Then  I am on the "Widgets" page
-
+  @exclude
   Scenario: Accordian
     When I click "Accordian option"
     And  I click "Section two heading"
@@ -13,7 +13,7 @@ Feature: DemoQA - Widgets
     Then "Content" should contain "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text"
     When I click "Section one heading"
     Then "Content" should contain "It was popularised in the 1960s with the release of Letraset sheets"
-
+  @exclude
   Scenario: Auto Complete
     When I click "Auto complete option"
     And  I set "Multiple color field" to "Red"
@@ -24,7 +24,7 @@ Feature: DemoQA - Widgets
     And  "Multiple color container" should contain "Blue"
     When I set "Single color field" to "Purple"
     Then "Single color container" should contain "Purple"
-
+  @exclude
   Scenario: Date Picker
     When I click "Date Picker option"
     And  I click "Select date"
@@ -42,7 +42,7 @@ Feature: DemoQA - Widgets
     Then I see "Select date and time value" with the following data:
       | Value                  |
       | March 28, 2018 9:00 PM |
-
+  @exclude
   Scenario: Slider
     When I click "Slider option"
     And  I set "Slider ball" to "10"
@@ -53,14 +53,14 @@ Feature: DemoQA - Widgets
     Then I see "Slider value" with the following data:
       | Value |
       | 40    |
-
+  @exclude
   Scenario: Progress bar
     When I click "Progress bar option"
     And  I set "Progress bar" to "44"
     Then I see "Progress bar" with the following data:
       | Value |
       | 44    |
-
+  @exclude
   Scenario: Tabs
     When I click "Tabs option"
     Then "More tab" should be "disabled"
@@ -70,7 +70,7 @@ Feature: DemoQA - Widgets
     Then "Content" should contain "Various versions have evolved over the years"
     When I click "What tab"
     Then "Content" should contain "unknown printer took a galley"
-
+  @run
   Scenario: Tool tips
     When I click "Tool Tips option"
     And  I hover over "Hover me to see button"
@@ -81,7 +81,7 @@ Feature: DemoQA - Widgets
     Then "Contrary Tool tip" should contain "You hovered over the Contrary"
     When I hover over "Section 1.10.32"
     Then "Section Tool tip" should contain "You hovered over the 1.10.32"
-
+  @exclude
   Scenario: Menu
     When I click "Menu option"
     And  I hover over "Main Item 1"
@@ -93,7 +93,7 @@ Feature: DemoQA - Widgets
     When I hover over "SUB SUB LIST"
     Then "Sub Sub item 1" should be "visible"
     And  "Sub Sub item 2" should be "visible"
-
+  @exclude
   Scenario: Select Menu
     When I click "Select Menu option"
     And  I set "Select Value" to "Another root option"

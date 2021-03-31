@@ -81,7 +81,7 @@ Feature: DemoQA - Widgets
     Then "Contrary Tool tip" should contain "You hovered over the Contrary"
     When I hover over "Section 1.10.32"
     Then "Section Tool tip" should contain "You hovered over the 1.10.32"
-  @run
+  @exclude
   Scenario: Menu
     When I click "Menu option"
     And  I hover over "Main Item 1"
@@ -93,7 +93,7 @@ Feature: DemoQA - Widgets
     When I hover over "SUB SUB LIST"
     Then "Sub Sub item 1" should be "visible"
     And  "Sub Sub item 2" should be "visible"
-  @exclude
+  @run
   Scenario: Select Menu
     When I click "Select Menu option"
     And  I set "Select Value" to "Another root option"

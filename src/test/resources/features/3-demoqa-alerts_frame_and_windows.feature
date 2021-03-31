@@ -10,6 +10,13 @@ Feature: DemoQA - Alerts, Frame And Windows page
     And  I click "New tab button"
     And  I switch to new tab
     Then "Sample title" should contain "This is a sample page"
+@run
+  Scenario: Modal Dialogs
+    When I click "Modal Dialogs option"
+    And  I click "Small modal button"
+    Then I click "Close Modal button"
+    And  I click "Large modal button"
+    Then I click "Large Close Modal button"
 @exclude
   Scenario: Browser windows - new window
     When I click "Browser Windows option"
